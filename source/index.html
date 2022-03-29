@@ -35,44 +35,59 @@
         <a href="#" class="main-header__logo">
           <img src="img/logo.svg" />
         </a>
-        <a class="main-header__link">Начать беседу</a>
-        <a><img src="img/lang.svg" /></a>
 
-        <nav class="main-header__nav">
-          <div class="main-header__butger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <ul class="main-header__list"></ul>
-        </nav>
+        <ul class="main-header__nav-list">
+          <li class="main-header__item"><a href="#">About us</a></li>
+          <li class="main-header__item"><a href="#">Blog</a></li>
+          <li class="main-header__item"><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="main-header-wrapper">
+          <a class="main-header__link">Начать беседу</a>
+          <a><img src="img/lang.svg" /></a>
+          <a class="main-header__link main-header__link--sign-in">Войти</a>
+          <nav class="main-header__nav">
+            <div class="main-header__butger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero-block">
         <div class="container">
-          <p class="hero-block__subtitle">+300 прошедших отбор психологов</p>
-          <h2 class="hero-block__title">Сессии с психологом Онлайн</h2>
-          <a class="hero-block__link">Начать беседу</a>
+          <div class="hero-block__wrapper">
+            <p class="hero-block__subtitle">+300 прошедших отбор психологов</p>
+            <h2 class="hero-block__title">Сессии с психологом Онлайн</h2>
+            <a class="hero-block__link">Начать беседу</a>
+          </div>
+
           <img src="img/human_air.svg" />
         </div>
       </section>
       <section class="about-app">
         <div class="container">
-          <img src="img/video.png" alt="video" />
-          <h2 class="about-app__title">Скачайте бесплатно приложение SPEAK</h2>
-          <div class="about-app__wrapper">
-            <img src="img/logo_2.svg" />
-            <div class="about-app__inner-wrapper">
-              <p class="about-app__name">Speak</p>
-              <p class="about-app__subtitle">
-                онлайн сессии с психологом доступно для iOS и Android
-              </p>
+          <img class="about-app__img-video" src="img/video.png" alt="video" />
+          <div class="about-app__wrap">
+            <h2 class="about-app__title">
+              Скачайте бесплатно приложение SPEAK
+            </h2>
+            <div class="about-app__wrapper">
+              <img src="img/logo_2.svg" />
+              <div class="about-app__inner-wrapper">
+                <p class="about-app__name">Speak</p>
+                <p class="about-app__subtitle">
+                  онлайн сессии с психологом доступно для iOS и Android
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="about-app__wrapper-applink">
-            <a><img src="img/appstore.png" /></a>
-            <a><img src="img/playstore.png" /></a>
+            <div class="about-app__wrapper-applink">
+              <a><img src="img/appstore.png" /></a>
+              <a><img src="img/playstore.png" /></a>
+            </div>
           </div>
         </div>
       </section>
@@ -102,7 +117,52 @@
           <div class="swiper our-psychologists__slider">
             <div class="swiper-wrapper our-psychologists__slider-wrapper">
               <div class="swiper-slide our-psychologists__slide">
-                <img src="img/userpic_1.png" />
+                <img
+                  class="our-psychologists__slide-userpic"
+                  src="img/userpic_1.png"
+                />
+                <div class="our-psychologists__slider-wrapper">
+                  <div class="our-psychologists__slider-inner-wrapper">
+                    <p class="our-psychologists__slider__name">Илья Благов</p>
+                    <img src="img/stars.svg" />
+                  </div>
+                  <img src="img/arrow-right.svg" />
+                </div>
+              </div>
+
+              <div class="swiper-slide our-psychologists__slide">
+                <img
+                  class="our-psychologists__slide-userpic"
+                  src="img/userpic_1.png"
+                />
+                <div class="our-psychologists__slider-wrapper">
+                  <div class="our-psychologists__slider-inner-wrapper">
+                    <p class="our-psychologists__slider__name">Илья Благов</p>
+                    <img src="img/stars.svg" />
+                  </div>
+                  <img src="img/arrow-right.svg" />
+                </div>
+              </div>
+
+              <div class="swiper-slide our-psychologists__slide">
+                <img
+                  class="our-psychologists__slide-userpic"
+                  src="img/userpic_1.png"
+                />
+                <div class="our-psychologists__slider-wrapper">
+                  <div class="our-psychologists__slider-inner-wrapper">
+                    <p class="our-psychologists__slider__name">Илья Благов</p>
+                    <img src="img/stars.svg" />
+                  </div>
+                  <img src="img/arrow-right.svg" />
+                </div>
+              </div>
+
+              <div class="swiper-slide our-psychologists__slide">
+                <img
+                  class="our-psychologists__slide-userpic"
+                  src="img/userpic_1.png"
+                />
                 <div class="our-psychologists__slider-wrapper">
                   <div class="our-psychologists__slider-inner-wrapper">
                     <p class="our-psychologists__slider__name">Илья Благов</p>
@@ -141,128 +201,148 @@
       </section>
       <section class="our-help">
         <div class="container">
-          <h2 class="our-help__title">Поможем вам</h2>
-          <ul class="our-help__list">
-            <li class="our-help__item">
-              <img src="img/check.svg" />
-              Разрешить причины сложных отношений с партнером
-            </li>
-            <li class="our-help__item">
-              <img src="img/check.svg" />
-              Снять или снизить остроту переживаний
-            </li>
-            <li class="our-help__item">
-              <img src="img/check.svg" />
-              Справиться с выгоранием на работе и найти мотивацию
-            </li>
-            <li class="our-help__item">
-              <img src="img/check.svg" />
-              Понять себя в отношениях с близкими людьми
-            </li>
-            <li class="our-help__item">
-              <img src="img/check.svg" />
-              Найти себя и понимать свои желания
-            </li>
-            <li class="our-help__item">
-              <img src="img/check.svg" />
-              Исследовать и управлять изменениями в своей жизни
-            </li>
-          </ul>
-          <img src="img/help.png" />
+          <div class="our-help__wrapper">
+            <h2 class="our-help__title">Поможем вам</h2>
+            <ul class="our-help__list">
+              <li class="our-help__item">
+                <img src="img/check.svg" />
+                Разрешить причины сложных отношений с партнером
+              </li>
+              <li class="our-help__item">
+                <img src="img/check.svg" />
+                Снять или снизить остроту переживаний
+              </li>
+              <li class="our-help__item">
+                <img src="img/check.svg" />
+                Справиться с выгоранием на работе и найти мотивацию
+              </li>
+              <li class="our-help__item">
+                <img src="img/check.svg" />
+                Понять себя в отношениях с близкими людьми
+              </li>
+              <li class="our-help__item">
+                <img src="img/check.svg" />
+                Найти себя и понимать свои желания
+              </li>
+              <li class="our-help__item">
+                <img src="img/check.svg" />
+                Исследовать и управлять изменениями в своей жизни
+              </li>
+            </ul>
+          </div>
+
+          <img class="our-help__img-help" src="img/help.png" />
         </div>
       </section>
       <section class="advantage">
         <div class="container">
           <img src="img/Mobile.png" />
-          <h2 class="advantage__title">
-            Преимущества онлайн сессий с психологом
-          </h2>
-          <ul class="advantage__list">
-            <li class="advantage__item">
-              <h3 class="advantage__item-title">
-                Занимайтесь где и как удобно
-              </h3>
-              <p class="advantage__item-subtitle">
-                Дома или в поездке и в любом часовом поясе
-              </p>
-            </li>
-            <li class="advantage__item">
-              <h3 class="advantage__item-title">
-                Меньше забот- больше мотивации
-              </h3>
-              <p class="advantage__item-subtitle">
-                Не тратьте время на дорогу и управляйте занятиями в два клика
-              </p>
-            </li>
-            <li class="advantage__item">
-              <h3 class="advantage__item-title">Доверяйте себе</h3>
-              <p class="advantage__item-subtitle">
-                Выбирайте среди проверенных психологов, которые
-                специаллизируются на ваших запросах
-              </p>
-            </li>
-          </ul>
+          <div class="advantage__wrapper">
+            <h2 class="advantage__title">
+              Преимущества онлайн сессий с психологом
+            </h2>
+            <ul class="advantage__list">
+              <li class="advantage__item">
+                <h3 class="advantage__item-title">
+                  Занимайтесь где и как удобно
+                </h3>
+                <p class="advantage__item-subtitle">
+                  Дома или в поездке и в любом часовом поясе
+                </p>
+              </li>
+              <li class="advantage__item">
+                <h3 class="advantage__item-title">
+                  Меньше забот- больше мотивации
+                </h3>
+                <p class="advantage__item-subtitle">
+                  Не тратьте время на дорогу и управляйте занятиями в два клика
+                </p>
+              </li>
+              <li class="advantage__item">
+                <h3 class="advantage__item-title">Доверяйте себе</h3>
+                <p class="advantage__item-subtitle">
+                  Выбирайте среди проверенных психологов, которые
+                  специаллизируются на ваших запросах
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="specialists-selection">
         <div class="container">
-          <h2 class="specialists-selection__title">
-            Как мы отбираем специалистов?
-          </h2>
-          <p class="specialists-selection__subtitle">
-            Отбор проходят меньше 10% специаллистов
-          </p>
-          <ul class="specialists-selection__list">
-            <li class="specialists-selection__item">
-              <h3 class="specialists-selection__item-title">
-                Документы об образовании
-              </h3>
-              <p class="specialists-selection__item-subtitle">
-                Обязательно иметь высшее психологическое образование и
-                сертификаты для ведения психотерапии
-              </p>
-            </li>
+          <div class="specialists-selection__wrapper">
+            <h2 class="specialists-selection__title">
+              Как мы отбираем специалистов?
+            </h2>
+            <p class="specialists-selection__subtitle">
+              Отбор проходят меньше 10% специаллистов
+            </p>
+          </div>
 
-            <li class="specialists-selection__item">
-              <h3 class="specialists-selection__item-title">
-                Опыт частной практики и личной терапии
-              </h3>
-              <p class="specialists-selection__item-subtitle">
-                Нужно не менее 3-х лет частной практики, личная терапия и
-                регулярные супервизии
-              </p>
-            </li>
+          <div class="specialists-selection__wrap">
+            <ul class="specialists-selection__list">
+              <li class="specialists-selection__item">
+                <h3 class="specialists-selection__item-title">
+                  Документы об образовании
+                </h3>
+                <p class="specialists-selection__item-subtitle">
+                  Обязательно иметь высшее психологическое образование и
+                  сертификаты для ведения психотерапии
+                </p>
+              </li>
 
-            <li class="specialists-selection__item">
-              <h3 class="specialists-selection__item-title">
-                Собеседование с нашим экспертом-ментором
-              </h3>
-              <p class="specialists-selection__item-subtitle">
-                Отслеживаются коммуникативные способности, уровень эмпатии,
-                манера и стиль беседы, проффесиональные компетенции
-              </p>
-            </li>
-          </ul>
+              <li class="specialists-selection__item">
+                <h3 class="specialists-selection__item-title">
+                  Опыт частной практики и личной терапии
+                </h3>
+                <p class="specialists-selection__item-subtitle">
+                  Нужно не менее 3-х лет частной практики, личная терапия и
+                  регулярные супервизии
+                </p>
+              </li>
 
-          <img src="img/human_phone.png" />
+              <li class="specialists-selection__item">
+                <h3 class="specialists-selection__item-title">
+                  Собеседование с нашим экспертом-ментором
+                </h3>
+                <p class="specialists-selection__item-subtitle">
+                  Отслеживаются коммуникативные способности, уровень эмпатии,
+                  манера и стиль беседы, проффесиональные компетенции
+                </p>
+              </li>
+            </ul>
+
+            <img src="img/human_phone.png" />
+          </div>
         </div>
       </section>
 
       <section class="about-services">
         <div class="container">
           <h2 class="about-services__title">О сервисе</h2>
-          <ul class="about-services__list">
-            <li class="about-services__item">
-              <span>900+</span><br />регистраций вчера
-            </li>
-            <li class="about-services__item">
-              <span>700+</span><br />проведено сессий
-            </li>
-            <li class="about-services__item">
-              <span>354+</span><br />психологов
-            </li>
-          </ul>
-          <img src="img/video.png" alt="video" />
+
+          <div class="about-services__wrap">
+            <ul class="about-services__list">
+              <li class="about-services__item">
+                <span>900+</span><br />регистраций вчера
+              </li>
+              <li class="about-services__item">
+                <span>700+</span><br />проведено сессий
+              </li>
+              <li class="about-services__item">
+                <span>354+</span><br />психологов
+              </li>
+            </ul>
+
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="img/video_tablet.png"
+              />
+              <img src="img/video.png" alt="video" />
+            </picture>
+          </div>
 
           <div class="about-services__wrapper">
             <div class="about-services__selection-type">
@@ -290,13 +370,12 @@
           </div>
         </div>
       </section>
-
       <section class="how-works">
         <div class="container">
           <h2 class="how-works__title">Как это устроено</h2>
           <ul class="how-works__list-nav">
             <li class="how-works__list-nav__item">
-              <input id="one" name="how-works" type="radio" />
+              <input checked id="one" name="how-works" type="radio" />
               <label for="one">1</label>
             </li>
 
@@ -315,7 +394,57 @@
               <label for="four ">4</label>
             </li>
           </ul>
-          <img src="img/Mobile_chat.png" alt="mobile" />
+
+          <div class="how-works__wrapper">
+            <div class="how-works__col-one">
+              <div class="how-works__col-one-item">
+                <div class="how-works__inner-wrapper">
+                  <h3 class="how-works__item-title">
+                    Заполните простую анкету
+                  </h3>
+                  <p class="how-works__item-subtitle">
+                    Расскажите, что вас беспокоит и что важно в психологе.
+                  </p>
+                </div>
+              </div>
+
+              <div class="how-works__col-one-item">
+                <div class="how-works__inner-wrapper">
+                  <h3 class="how-works__item-title">
+                    Выберите способ связи с психологом
+                  </h3>
+                  <p class="how-works__item-subtitle">
+                    49руб/мин по
+                    <span>аудио/видео связи<br /></span>
+                    200руб за 24 часа <span>чата + аудио сообщения</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img src="img/Mobile_chat.png" alt="mobile" />
+            <div class="how-works__col-two">
+              <div class="how-works__col-two-item">
+                <div class="how-works__inner-wrapper">
+                  <h3 class="how-works__item-title">Выберите психолога</h3>
+                  <p class="how-works__item-subtitle">
+                    Выберите понравившегося психолога
+                  </p>
+                </div>
+              </div>
+
+              <div class="how-works__col-two-item">
+                <div class="how-works__inner-wrapper">
+                  <h3 class="how-works__item-title">Начните общение</h3>
+                  <p class="how-works__item-subtitle">
+                    Все общение происходит через платформу SPEAK. Вслучае если
+                    психолог вам не понравится, вы можете заменить его без
+                    дополнительных переплат
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <ul class="how-works__list">
             <li class="how-works__item">
               <h3 class="how-works__item-title">Заполните простую анкету</h3>
@@ -350,6 +479,7 @@
               </p>
             </li>
           </ul>
+
           <a class="how-works__link">Начать общение</a>
         </div>
       </section>
@@ -398,20 +528,25 @@
       </section>
       <section class="about-app">
         <div class="container">
-          <img src="img/phone_p.png" />
-          <h2 class="about-app__title">Скачайте бесплатно приложение SPEAK</h2>
-          <div class="about-app__wrapper">
-            <img src="img/logo_2.svg" />
-            <div class="about-app__inner-wrapper">
-              <p class="about-app__name">Speak</p>
-              <p class="about-app__subtitle">
-                онлайн сессии с психологом доступно для iOS и Android
-              </p>
+          <img class="about-app__img-phone" src="img/phone_p.png" />
+
+          <div class="about-app__wrap">
+            <h2 class="about-app__title">
+              Скачайте бесплатно приложение SPEAK
+            </h2>
+            <div class="about-app__wrapper">
+              <img src="img/logo_2.svg" />
+              <div class="about-app__inner-wrapper">
+                <p class="about-app__name">Speak</p>
+                <p class="about-app__subtitle">
+                  онлайн сессии с психологом доступно для iOS и Android
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="about-app__wrapper-applink">
-            <a><img src="img/appstore.png" /></a>
-            <a><img src="img/playstore.png" /></a>
+            <div class="about-app__wrapper-applink">
+              <a><img src="img/appstore.png" /></a>
+              <a><img src="img/playstore.png" /></a>
+            </div>
           </div>
         </div>
       </section>
@@ -522,16 +657,6 @@
                 Онлайн-консультация детского психолога может быть полезна, если
                 у вас есть вопросы по таким темам, как:
               </p>
-            </li>
-
-            <li class="about-children__item">
-              <h3 class="about-children__item-title">
-                Когда нужна помощь детского психолога онлайн?
-              </h3>
-              <p class="about-children__item-subtitle">
-                Онлайн-консультация детского психолога может быть полезна, если
-                у вас есть вопросы по таким темам, как:
-              </p>
               <br />
               <ul class="about-children__item-list">
                 <li>Плохая успеваемость;</li>
@@ -625,54 +750,59 @@
     </main>
     <footer class="main-footer">
       <div class="container">
-        <a href="#">
-          <img src="img/logo.svg" width="152" height="60" alt="logo"
-        /></a>
+        <div class="main-footer__wrapper">
+          <a href="#">
+            <img src="img/logo.svg" width="152" height="60" alt="logo"
+          /></a>
 
-        <ul class="main-footer__list-nav">
-          <li class="main-footer__item-nav"><a href="#">Home</a></li>
-          <li class="main-footer__item-nav"><a href="#">Blog</a></li>
-          <li class="main-footer__item-nav"><a href="#">About us</a></li>
-          <li class="main-footer__item-nav"><a href="#">Contact</a></li>
-          <li class="main-footer__item-nav"><a href="#">Privacy Policy</a></li>
-          <li class="main-footer__item-nav">
-            <a href="#">Terms and Conditions</a>
-          </li>
-        </ul>
+          <ul class="main-footer__list-nav">
+            <li class="main-footer__item-nav"><a href="#">Home</a></li>
+            <li class="main-footer__item-nav"><a href="#">Blog</a></li>
+            <li class="main-footer__item-nav"><a href="#">About us</a></li>
+            <li class="main-footer__item-nav"><a href="#">Contact</a></li>
+            <li class="main-footer__item-nav">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="main-footer__item-nav">
+              <a href="#">Terms and Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__wrapper">
+          <ul class="main-footer__list-social">
+            <li class="main-footer__item-social">
+              <a><img src="img/facebook.svg" /></a>
+            </li>
 
-        <ul class="main-footer__list-social">
-          <li class="main-footer__item-social">
-            <a><img src="img/facebook.svg" /></a>
-          </li>
+            <li class="main-footer__item-social">
+              <a><img src="img/instagram.svg" /></a>
+            </li>
 
-          <li class="main-footer__item-social">
-            <a><img src="img/instagram.svg" /></a>
-          </li>
+            <li class="main-footer__item-social">
+              <a><img src="img/linkedin.svg" /></a>
+            </li>
 
-          <li class="main-footer__item-social">
-            <a><img src="img/linkedin.svg" /></a>
-          </li>
+            <li class="main-footer__item-social">
+              <a><img src="img/twitter.svg" /></a>
+            </li>
+          </ul>
 
-          <li class="main-footer__item-social">
-            <a><img src="img/twitter.svg" /></a>
-          </li>
-        </ul>
+          <ul class="main-footer__list-contacts">
+            <li class="main-footer__teim-contacts">
+              <a href="mailto:info@speak.help">
+                <img src="img/mail.svg" />
+                info@speak.help
+              </a>
+            </li>
 
-        <ul class="main-footer__list-contacts">
-          <li class="main-footer__teim-contacts">
-            <a href="mailto:info@speak.help">
-              <img src="img/mail.svg" />
-              info@speak.help
-            </a>
-          </li>
-
-          <li class="main-footer__teim-contacts">
-            <a>
-              <img src="img/pin.svg" />
-              33 W 60th Street, 8th FI New York, NY 10023
-            </a>
-          </li>
-        </ul>
+            <li class="main-footer__teim-contacts">
+              <a>
+                <img src="img/pin.svg" />
+                33 W 60th Street, 8th FI New York, NY 10023
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
